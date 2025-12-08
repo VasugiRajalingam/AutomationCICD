@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="tests" name="Regression Test">
+    <groups>
+        <run>
+            <include name="Smoke"/>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="testcomponents.Listeners"/>
+    </listeners>
+    <test thread-count="2" name="Login Test">
+        <classes>
+            <class name="e2etests.LoginErrorValidation"/>
+        </classes>
+    </test>
+    <test thread-count="2" name="Place Order Test">
+        <classes>
+            <class name="e2etests.PlaceOrder"/>
+        </classes>
+    </test>
+</suite>
