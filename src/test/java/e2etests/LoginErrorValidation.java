@@ -7,6 +7,7 @@ import testcomponents.RetryListener;
 
 public class LoginErrorValidation extends BaseTest {
     @Test(groups = {"Smoke"})
+	// Test comment for GIT
     public void verifyIncorrectPwdError() {
         loginPage.loginInToApp("vasugiraj@gmail.com", "VamiSathish@2025");
         String actualError = loginPage.getErrorMsg();
