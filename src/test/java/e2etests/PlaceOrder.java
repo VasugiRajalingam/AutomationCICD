@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class PlaceOrder extends BaseTest {
     String prdtName = "ZARA COAT 3";
-
+	// test comment for CICD webhook chnages
     @Test(dataProvider = "getData", groups = "Order")
     public void submitOrder(String email, String pwd, String prdtName) throws IOException {
 
